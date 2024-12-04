@@ -4,7 +4,7 @@ p=pd.read_csv('AQI_Data.csv')
 print('First 8 rows: \n',p.head(8))
 print('Last 5 rows: \n',p.tail(5))
 print('dtype and number of non- null values in each column: \n')
-p.info()
+print(p.info())
 
 m= p.groupby('City')['AQI'].apply(lambda x: np.mean(x))
 print('Cities with mean AQI: \n',m)
