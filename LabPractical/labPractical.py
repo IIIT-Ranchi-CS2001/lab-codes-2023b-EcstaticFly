@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-p=pd.DataFrame(pd.read_csv('AQI_Data.csv'))
+p=pd.read_csv('AQI_Data.csv')
 print('First 8 rows: \n',p.head(8))
 print('Last 5 rows: \n',p.tail(5))
 print('dtype and number of non- null values in each column: \n')
